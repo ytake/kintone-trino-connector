@@ -10,7 +10,7 @@ name := "kintone-trino-connector"
 libraryDependencies ++= Seq(
   "com.kintone" % "kintone-java-client" % "1.2.0",
   "org.scala-lang" % "scala-library" % "2.13.7",
-  "io.airlift" % "Bootstrap" % airliftVersion % "provided",
+  "io.airlift" % "bootstrap" % airliftVersion % "provided",
   "io.airlift" % "configuration" % airliftVersion % "provided",
   "io.airlift" % "json" % airliftVersion % "provided",
   "io.trino" % "trino-spi" % trinoVersion % "provided",

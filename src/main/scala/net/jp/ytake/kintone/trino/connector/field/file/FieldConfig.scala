@@ -1,10 +1,11 @@
 package net.jp.ytake.kintone.trino.connector.field.file
 
 import io.airlift.configuration.{Config, ConfigDescription}
+
 import java.io.File
 import javax.validation.constraints.NotNull
 
-class FiledConfig {
+class FieldConfig {
 
   private var fieldDes : File = new File("etc/kintone/")
 
@@ -12,7 +13,7 @@ class FiledConfig {
 
   @Config("kintone.filed-description-dir")
   @ConfigDescription("Folder holding JSON description files for kintone fileds")
-  def setFiledDescriptionDir(filedDescriptionDir: File): FiledConfig = {
+  def setFiledDescriptionDir(filedDescriptionDir: File): FieldConfig = {
     fieldDes = filedDescriptionDir
     this
   }
