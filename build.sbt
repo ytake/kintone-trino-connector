@@ -1,4 +1,5 @@
 val trinoVersion = "364"
+val airliftVersion = "208"
 
 version := trinoVersion
 
@@ -9,6 +10,9 @@ name := "kintone-trino-connector"
 libraryDependencies ++= Seq(
   "com.kintone" % "kintone-java-client" % "1.2.0",
   "org.scala-lang" % "scala-library" % "2.13.7",
+  "io.airlift" % "bootstrap" % airliftVersion % "provided",
+  "io.airlift" % "configuration" % airliftVersion % "provided",
+  "io.airlift" % "json" % airliftVersion % "provided",
   "io.trino" % "trino-spi" % trinoVersion % "provided",
   "org.scalatest" %% "scalatest" % "3.2.7" % Test
 )

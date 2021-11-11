@@ -1,5 +1,7 @@
 package net.jp.ytake.kintone.trino.connector
 
-object Main extends App {
+import io.trino.spi.Plugin
+
+object Main extends Plugin {
 
 }
